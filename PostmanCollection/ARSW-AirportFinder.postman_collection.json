@@ -11,12 +11,12 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "x-rapidapi-host",
+						"key": "cometari-airportsfinder-v1.p.rapidapi.com",
 						"value": "",
 						"type": "text"
 					},
 					{
-						"key": "x-rapidapi-key",
+						"key": "7bf61d536emsh1d8e6ba3ec8b2dbp1ecaaajsnbc1272fe637a",
 						"value": "",
 						"type": "text"
 					}
