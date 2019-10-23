@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>City layer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  	<script src="app.js"></script>
+        <script src="apiClient.js"></script>
+    <script src="/webjars/jquery/3.3.1-1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"
+      href="/webjars/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <style>
+    html, body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+   
+    }
+    #HeaderApi{
+    text-align: center;
+    }
+	
+    #map-canvas {
+      width: 30%;
+      height: 45%;
+      margin: 1;
+      padding: 1;
+     
+    }
+    #search-field{
+    	
+ 		text-align: center;
+    }
+    #ApiData{
+    width: 75%;
+    
+    text-align: center;
+    }
+    .gm-style-iw {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body >
+  <div id="HeaderWeather"> 
+	<strong> Welcome to AirportsFinder</strong>
+	
+	
+</div>
+<div id="search-field"> 
+	<input id="ciudad" type="text" size="50">
+	<input type="button" class="btn btn-primary" value="Buscar" onclick="apiClient.getCityInfo(ciudad.value)">
+	<p></p> 
+	
+</div>
+<div id="ApiData">
+<table  id="ApiTable"   class="table table-striped" style="width:100%" border="0">
+<thead>
+	  <tr>
+	    <th>City</th>
+	    <th>airportId</th>
+	    <th>name</th> 
+	    <th>city</th>
+	    <th>cityId</th>
+	  </tr>
+	  </thead>
+	</table>
+</div>
+
+</body>
+
+</html>
