@@ -13,22 +13,27 @@ apiClient = (function () {
                 console.log(data.values());
                 data.forEach(function (valor, indice, array) {
                     console.log(valor);
-                    valor.append("<tbody>" +
-                        "<tr>" +
-                        "<td>" + name + "</td>" +
-                        "<td>" + data.airportId + "</td>" +
-                        '<td>' + data.name + "</td>" +
-                        '<td>' + data.city + "</td>" +
-                        '<td>' + data.cityId + "</td>" +
-                        '</tr>' + "</tbody>"
+                    var lol = "<tbody>" +
+                            "<tr>" +
+                            "<td>" + name + "</td>" +
+                            "<td>" + valor.airportId + "</td>" +
+                            '<td>' + valor.name + "</td>" +
+                            '<td>' + valor.city + "</td>" +
+                            '<td>' + valor.cityId + "</td>" +
+                            '</tr>' + "</tbody>"
+                    var btn = document.createElement("TR");
+                    btn.innerHTML = lol;
+                    document.getElementById("ApiTable").appendChild(btn);
 
-                        );
+
                 });
-                
+
             });
         }
     }
 })();
+
+
 
 
 
