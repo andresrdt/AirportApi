@@ -5,12 +5,18 @@
  */
 package edu.eci.airports.persistencia;
 
-import kong.unirest.HttpResponse;
-
 /**
  *
  * @author 2112076
  */
-public interface HttpConnection {
-        public String connection(String name) ;
+public class HttpConnectionException extends Exception{
+
+    public HttpConnectionException (String message) {
+        super(message);
+    }
+
+    public HttpConnectionException(String message, Throwable cause) {
+        super(message, cause);
+    }
+    
 }
