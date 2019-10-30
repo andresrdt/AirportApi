@@ -28,6 +28,7 @@ public class AirportsFinderController {
     @RequestMapping(path ="/{city}",method = RequestMethod.GET)
     public ResponseEntity<?> GetAirportByName(@PathVariable ("city") String name){
         try {
+            
             return new ResponseEntity<>(afs.OpenConnection(name),HttpStatus.ACCEPTED);
         } catch (Exception e) {
             Logger.getLogger(AirportsFinderController.class.getName()).log(Level.SEVERE, null, e);

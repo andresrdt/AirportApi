@@ -5,6 +5,8 @@
  */
 package edu.eci.airports.persistencia;
 
+import edu.eci.airports.model.Airport;
+import java.util.List;
 import kong.unirest.HttpResponse;
 
 /**
@@ -12,5 +14,5 @@ import kong.unirest.HttpResponse;
  * @author 2112076
  */
 public interface HttpConnection {
-        public String connection(String name) ;
+        public List<Airport> connection(String name) ;
 }
