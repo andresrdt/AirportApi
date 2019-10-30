@@ -13,10 +13,6 @@ apiClient = (function () {
                 console.log(weather[1]);
                 if (weather != null) {
                     for (x = 0; x < weather.length; x++) {
-
-
-
-
                         var lol = "<tbody>" +
                                 "<tr>" +
                                 "<td>" + name + "</td>" +
